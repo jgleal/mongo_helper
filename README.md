@@ -7,7 +7,8 @@ Helpers to manage Mongo DB
 In order to run this project you will need the following variables inside a `.env` file on the root directory
 
 ```
-COSMOSDB_CONNECTION_STRING=
-DATABASE_NAME=
-COLLECTION_NAME=
+COSMOSDB_CONNECTION_STRING=mongodb://localhost:27017/
+DATABASE_NAME= database_name
+COLLECTION_NAME=collection_name
+SHARD_KEY=field1,field2,...
 ```

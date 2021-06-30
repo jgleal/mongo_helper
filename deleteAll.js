@@ -1,5 +1,5 @@
 
-const { mongoConnection, DB_NAME, COLLECTION_NAME } = require('./mongoConfig.js')
+const { mongoConnection, DB_NAME, COLLECTION_NAME, SHARD_KEY } = require('./mongoConfig.js')
 
 const createShardKey = (fields, document) => {
   const objShardKey = {}
@@ -24,4 +24,4 @@ const deleteAllWithShardKey = async (shardKeyFields) => {
   console.log('Done!!')
 }
 
-deleteAllWithShardKey(['packageId','timestamp'])
+deleteAllWithShardKey(SHARD_KEY.split(','))
