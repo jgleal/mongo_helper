@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "delete:all": "node deleteAll.js"
+    "delete:all": "node deleteAll.js",
+    "delete:query": "node deleteQuery.js",
+    "query": "node query.js"
   },
   "keywords": [],
   "author": "",
